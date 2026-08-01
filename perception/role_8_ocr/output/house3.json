@@ -1,0 +1,15 @@
+{
+    "house": "house3",
+    "rooms": [
+        "DINING ROOM",
+        "BATHROOM",
+        "BEDROOM",
+        "KITCHEN",
+        "BALCONY",
+        "LAUNDRY",
+        "LIVING",
+        "ENTRY"
+    ],
+    "dimensions": [],
+    "scale": "Unknown"
+}

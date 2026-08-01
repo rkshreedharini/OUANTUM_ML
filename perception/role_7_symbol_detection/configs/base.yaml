@@ -1,0 +1,71 @@
+# BIM-Vision Role 7 -- detection config. Single source of truth for every knob.
+# Nothing here is hardcoded in the scripts.
+
+project: bim-vision-detection
+seed: 42
+
+# ---- classes: mirror src/taxonomy.py; kept here so data.yaml is generated ----
+classes: [door, window, stair, fixture]
+
+# ---- category -> training class map (exact tier; keyword tier is in classmap.py) ----
+# Categories absent here fall back to keyword resolution, then unmapped (reported).
+class_map:
+  door: door
+  double_door: door
+  sliding_door: door
+  window: window
+  bay_window: window
+  stair: stair
+  staircase: stair
+  toilet: fixture
+  sink: fixture
+  bathtub: fixture
+
+# ---- data split ----
+split:
+  ratios: [0.8, 0.1, 0.1]
+  # group_key: null -> split by image. Set to a building id if several drawings
+  # come from one building, to prevent leakage across train/val/test.
+  group_key: null
+
+# ---- model / training (GPU REQUIRED for the train loop) ----
+model:
+  # yolo11s / yolo11m / yolo11l -- pick by GPU VRAM & dataset size
+  arch: yolo11m
+  pretrained: yolo11m.pt
+  imgsz: 1024                   # NOT 640: window symbols are ~0.1% of image area
+train:
+  epochs: 100
+  batch: 16                     # tune to VRAM
+  patience: 20
+  optimizer: auto
+  lr0: 0.01
+  augment:
+    fliplr: 0.5
+    flipud: 0.0                 # vertical flip rarely valid for plans
+    degrees: 0.0                # rotation off; symbols are orientation-bearing
+    mosaic: 1.0
+    hsv_s: 0.0                  # line art; colour jitter is noise
+    hsv_v: 0.3
+
+# ---- fallback comparison model ----
+rtdetr:
+  enabled: false
+  arch: rtdetr-l
+
+# ---- per-class F-beta thresholding (src/thresholds.py) ----
+thresholds:
+  beta:
+    door: 2.0
+    window: 2.0
+    stair: 1.0
+    fixture: 0.5
+  floor: 0.05
+  ceil: 0.90
+
+# ---- MLflow ----
+# sqlite backend: MLflow >= 3.6 refuses the plain './mlruns' file store
+# ("maintenance mode" MlflowException). sqlite is self-contained and portable.
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment: bim-vision-role7

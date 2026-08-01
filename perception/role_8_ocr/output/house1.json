@@ -1,0 +1,56 @@
+{
+    "house": "house1",
+    "rooms": [
+        "LIVING ROOM",
+        "DINING ROOM",
+        "BEDROOM",
+        "KITCHEN",
+        "MASTER",
+        "GARAGE",
+        "BATH 2",
+        "PORCH"
+    ],
+    "dimensions": [
+        {
+            "width": 10,
+            "height": 10,
+            "unit": "ft"
+        },
+        {
+            "width": 12,
+            "height": 14,
+            "unit": "ft"
+        },
+        {
+            "width": 13,
+            "height": 15,
+            "unit": "ft"
+        },
+        {
+            "width": 10,
+            "height": 14,
+            "unit": "ft"
+        },
+        {
+            "width": 10,
+            "height": 20,
+            "unit": "ft"
+        },
+        {
+            "width": 9,
+            "height": 10,
+            "unit": "ft"
+        },
+        {
+            "width": 8,
+            "height": 13,
+            "unit": "ft"
+        },
+        {
+            "width": 8,
+            "height": 8,
+            "unit": "ft"
+        }
+    ],
+    "scale": "Unknown"
+}

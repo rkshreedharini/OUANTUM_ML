@@ -1,0 +1,43 @@
+{
+    "house": "house5.jpg",
+    "rooms": [
+        "BEDROOM 2",
+        "BEDROOM 3",
+        "KITCHEN",
+        "LAUNDRY",
+        "STORAGE",
+        "MASTER",
+        "LIVING",
+        "DINING",
+        "BATH 2",
+        "WIC"
+    ],
+    "dimensions": [
+        {
+            "width": 6,
+            "height": 11,
+            "unit": "ft"
+        },
+        {
+            "width": 8,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 7,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 9,
+            "height": 9,
+            "unit": "ft"
+        },
+        {
+            "width": 6,
+            "height": 9,
+            "unit": "ft"
+        }
+    ],
+    "scale": "Unknown"
+}

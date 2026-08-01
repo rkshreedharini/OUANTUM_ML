@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+_cpu_run/
+runs/
+mlruns/
+yolo_dataset/
+eval_out/
+*.pt
+fake_coco.json
+internal.json
+splits.json

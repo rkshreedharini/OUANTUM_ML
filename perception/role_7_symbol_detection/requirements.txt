@@ -1,0 +1,9 @@
+# CPU pipeline (adapter, balance, split, export, thresholds) needs only stdlib
+# + pyyaml. The GPU training/eval/infer steps need the rest.
+
+pyyaml>=6.0
+
+# --- GPU / training stack (install on the GPU machine or Colab) ---
+ultralytics>=8.3.0     # YOLOv11 + RT-DETR
+torch>=2.2             # install the CUDA build matching your GPU
+mlflow>=2.12

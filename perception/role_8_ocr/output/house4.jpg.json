@@ -1,0 +1,39 @@
+{
+    "house": "house4.jpg",
+    "rooms": [
+        "1/2 BATH",
+        "ENTRANCE",
+        "KITCHEN",
+        "LIVING",
+        "DINING",
+        "PANTRY"
+    ],
+    "dimensions": [
+        {
+            "width": 8,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 16,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 9,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 7,
+            "height": 8,
+            "unit": "ft"
+        },
+        {
+            "width": 8,
+            "height": 11,
+            "unit": "ft"
+        }
+    ],
+    "scale": "Unknown"
+}

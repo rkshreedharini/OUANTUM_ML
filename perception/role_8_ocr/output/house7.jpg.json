@@ -1,0 +1,12 @@
+{
+    "house": "house7.jpg",
+    "rooms": [],
+    "dimensions": [
+        {
+            "width": 8,
+            "height": 6,
+            "unit": "ft"
+        }
+    ],
+    "scale": "Unknown"
+}
