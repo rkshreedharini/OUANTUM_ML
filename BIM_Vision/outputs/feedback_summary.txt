@@ -1,0 +1,16 @@
+BIM Vision Feedback Pipeline
+========================================
+
+Step 1 : Review Queue
+E:\BIM_Vision\feedback\review_queue
+
+Step 2 : Capture Human Corrections
+E:\BIM_Vision\feedback\corrections
+
+Step 3 : Training Data Store
+E:\BIM_Vision\feedback\training_store
+
+Step 4 : Feedback Logs
+E:\BIM_Vision\feedback\logs
+
+Pipeline Status : READY

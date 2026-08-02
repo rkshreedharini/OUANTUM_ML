@@ -1,0 +1,10 @@
+pandas
+numpy
+opencv-python
+Pillow
+matplotlib
+dvc
+
+# Member 3
+label-studio
+lxml

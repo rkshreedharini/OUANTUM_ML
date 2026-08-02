@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "data": {
+            "image": "annotations/images/house1.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "data": {
+            "image": "annotations/images/house2.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "data": {
+            "image": "annotations/images/house3.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "data": {
+            "image": "annotations/images/house4.jpg.jpeg"
+        }
+    },
+    {
+        "id": 5,
+        "data": {
+            "image": "annotations/images/house5.jpg.jpeg"
+        }
+    },
+    {
+        "id": 6,
+        "data": {
+            "image": "annotations/images/house6.jpg.jpeg"
+        }
+    }
+]

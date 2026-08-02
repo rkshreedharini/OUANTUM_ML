@@ -1,0 +1,7 @@
+Label Studio Project
+====================
+
+Project Name : BIM Vision Annotation
+Labels       : Room, Wall, Door, Window
+Images Found : 6
+Status       : Ready for Annotation

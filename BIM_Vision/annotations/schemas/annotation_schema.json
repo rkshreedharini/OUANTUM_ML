@@ -1,0 +1,43 @@
+{
+    "project": "BIM Vision Annotation",
+    "version": "1.0",
+    "labels": [
+        {
+            "name": "Room",
+            "type": "Polygon"
+        },
+        {
+            "name": "Wall",
+            "type": "Polygon"
+        },
+        {
+            "name": "Door",
+            "type": "Rectangle"
+        },
+        {
+            "name": "Window",
+            "type": "Rectangle"
+        },
+        {
+            "name": "Corner",
+            "type": "Keypoint"
+        }
+    ],
+    "relationships": [
+        {
+            "from": "Wall",
+            "to": "Room",
+            "relation": "bounds"
+        },
+        {
+            "from": "Door",
+            "to": "Wall",
+            "relation": "attached_to"
+        },
+        {
+            "from": "Window",
+            "to": "Wall",
+            "relation": "attached_to"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+outs:
+- md5: 5ed2f19e442a39fc26c9ef5b76b31671.dir
+  size: 5982151464
+  nfiles: 17345
+  hash: md5
+  path: CubiCasa5K

@@ -1,0 +1,9 @@
+<View>
+    <Image name="image" value="$image"/>
+    <PolygonLabels name="label" toName="image">
+        <Label value="Room"/>
+        <Label value="Wall"/>
+        <Label value="Door"/>
+        <Label value="Window"/>
+    </PolygonLabels>
+</View>
